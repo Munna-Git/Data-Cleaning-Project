@@ -1,13 +1,13 @@
 # **Real-Time API Data Cleaning with NewsAPI (+ A Wild Messy Dataset Bonus)**
 
-🗂️ Introduction
+## **Introduction**
+
 This README documents two unique data cleaning projects, each offering its own challenges and lessons. The first project focuses on real-time data cleaning using the NewsAPI, where news articles were fetched live and processed to handle everything from HTML tags and malformed URLs to inconsistent datetime formats. The second project takes on a different kind of chaos, a deliberately messy, static dataset filled with missing values, inconsistent formats, and more quirks than you’d expect in just 102 rows.
 
 Together, these projects showcase the breadth of data cleaning skills - from handling unpredictable real-world API data to untangling handcrafted messes - all with a focus on storytelling, structure, and data integrity.
 
 
 ## **API-Driven Data Cleaning for Real-World Data**
----
 
 ### **Documentation for API-Based Data Cleaning**
 
@@ -86,7 +86,6 @@ Through meticulous data cleaning, I transformed raw, messy data into a structure
 
 ## **Data Cleaning Project of the Messiest Dataset**
 
----
 
 ### **Documentation of the Messiest Dataset Data cleaning**
 
@@ -214,6 +213,7 @@ To help you explore the contents of this repository with ease, here’s a quick 
 ### **Project Notes**
 I’ve also included the raw documentation I wrote while working through both projects - feel free to check those out if you want a behind-the-scenes look into my thought process (and maybe a few moments of chaos). Have fun exploring!
 
+---
 
 ### **Final Thoughts**
 
