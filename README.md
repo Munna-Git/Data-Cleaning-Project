@@ -1,4 +1,12 @@
-# **API-Driven Data Cleaning for Real-World Data**
+# **Real-Time API Data Cleaning with NewsAPI (+ A Wild Messy Dataset Bonus)**
+
+🗂️ Introduction
+This README documents two unique data cleaning projects, each offering its own challenges and lessons. The first project focuses on real-time data cleaning using the NewsAPI, where news articles were fetched live and processed to handle everything from HTML tags and malformed URLs to inconsistent datetime formats. The second project takes on a different kind of chaos, a deliberately messy, static dataset filled with missing values, inconsistent formats, and more quirks than you’d expect in just 102 rows.
+
+Together, these projects showcase the breadth of data cleaning skills - from handling unpredictable real-world API data to untangling handcrafted messes - all with a focus on storytelling, structure, and data integrity.
+
+
+## **API-Driven Data Cleaning for Real-World Data**
 ---
 
 ### **Documentation for API-Based Data Cleaning**
@@ -76,15 +84,15 @@ Through meticulous data cleaning, I transformed raw, messy data into a structure
 
 ---
 
-# **Data Cleaning Project of the Messiest Dataset**
+## **Data Cleaning Project of the Messiest Dataset**
 
-### **Documentation for LinkedIn Dataset**
+---
 
-
+### **Documentation of the Messiest Dataset Data cleaning**
 
 ### **Project Overview**
 
-This project involved deep cleaning of a healthcare dataset that, to put it mildly, had seen better days. With only 102 rows and 10 columns, one might assume it’d be a quick task. But datasets, like onions, have layers, and this one had plenty. Missing values, inconsistent formats, weird characters, and even some Excel-era time travel. I general it had everything.
+This project involved deep cleaning of a healthcare dataset that, to put it mildly, had seen better days. With only 102 rows and 10 columns, one might assume it’d be a quick task. But datasets, like onions, have layers, and this one had plenty. Missing values, inconsistent formats, weird characters, and even some Excel-era time travel. In general it had everything.
 
 So here’s how I tackled it.
 
@@ -101,7 +109,7 @@ My approach:
 - Parsed the string-based numbers using regex and 'word2number'.
 - Standardized everything into clean numeric ages.
 - Filled missing values using **mean imputation**.
-- Finally, converted the column into `int`.
+- Finally, converted the column into 'int'.
 
 The same logic worked perfectly for the **'Heart_Rate'** column too, which had its own mix of numbers, floats, words, and blanks.
 
@@ -182,6 +190,30 @@ The 0s were treated as invalid and either removed or imputed appropriately:
 As for the datetime columns, I learned (the hard way) that trying to fill 'NaT' values with strings turns the whole column into 'object' type. So in the end, I left 'NaT' alone - they represent missing timestamps just fine.
 
 ---
+
+## **Repository Navigation**
+
+To help you explore the contents of this repository with ease, here’s a quick guide:
+
+### **NewsAPI Project**
+
+- **Raw Data**: Check out the News API Raw Dataset to see the original, untouched data pulled directly from the API.
+
+- **Pre-Processed Data**: Want to see the cleaned version? Head over to the News API pre processed dataset.
+
+- **Analysis**: Dive into the insights and visualizations in the News_API_Analysis.ipynb notebook.
+
+### **Messy Patient Dataset Project**
+
+- **Raw Data**: Explore the original chaos in the Numerical Raw Messy patient data.
+
+- **Pre-Processed Data**: For the cleaned and structured version, see the Numerical Pre-processed patient data.
+
+**Analysis**: The Numerical Data Cleaning.ipynb notebook walks through the entire cleaning process and analysis.
+
+### **Project Notes**
+I’ve also included the raw documentation I wrote while working through both projects - feel free to check those out if you want a behind-the-scenes look into my thought process (and maybe a few moments of chaos). Have fun exploring!
+
 
 ### **Final Thoughts**
 
