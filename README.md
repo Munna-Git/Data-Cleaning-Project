@@ -6,6 +6,8 @@ This README documents two unique data cleaning projects, each offering its own c
 
 Together, these projects showcase the breadth of data cleaning skills - from handling unpredictable real-world API data to untangling handcrafted messes - all with a focus on storytelling, structure, and data integrity.
 
+---
+
 
 ## **API-Driven Data Cleaning for Real-World Data**
 
