@@ -16,7 +16,7 @@ From decoding JSON-like fields, parsing HTML-laden content, managing broken URLs
 
 ### **Methodology**
 
-##### **Step 1: Data Collection**
+#### **Step 1: Data Collection**
 What makes this project unique isn’t just the cleaning, it’s the source of the data. While others start with a static dump, I began with **Python scripts calling an API**, gathering news articles in real time across categories like:
 
 - **Science**: Articles related to scientific discoveries and advancements.
@@ -25,7 +25,7 @@ What makes this project unique isn’t just the cleaning, it’s the source of t
 - **Environment**: Reports on climate change, sustainability, and ecological developments.
 
 
-##### **Step 2: Data Cleaning**
+#### **Step 2: Data Cleaning**
 The raw data contained several issues that needed addressing:
 1. **Source Column**: Stored as a stringified dictionary (e.g., {"id": "the-verge", "name": "The Verge"}).
 2. **Author Column**: Missing values and inconsistent formatting.
@@ -68,10 +68,10 @@ The raw data contained several issues that needed addressing:
    - Filled missing values in 'published_at_clean' with "Unknown Date".
 
 
-##### **Step 3: Saving Cleaned Data**
+#### **Step 3: Saving Cleaned Data**
 After cleaning, the dataset was saved as a CSV file for further analysis.
 
-#### **Conclusion**
+### **Conclusion**
 Through meticulous data cleaning, I transformed raw, messy data into a structured and usable format. This project not only improved the quality of the dataset but also provided valuable insights into news trends, content quality, and publication patterns. The cleaned dataset can now be used for various analyses, such as topic modeling, sentiment analysis, and trend identification.
 
 ---
@@ -89,7 +89,7 @@ This project involved deep cleaning of a healthcare dataset that, to put it mild
 So here’s how I tackled it.
 
 
-### Step 1: The AGE Column (a.k.a. The Identity Crisis)
+#### Step 1: The AGE Column (a.k.a. The Identity Crisis)
 
 I started with the **'Age'** column and it didn’t know who it was. It had:
 - Numeric values like '45',
@@ -106,7 +106,7 @@ My approach:
 The same logic worked perfectly for the **'Heart_Rate'** column too, which had its own mix of numbers, floats, words, and blanks.
 
 
-### Step 2: The Gender Column - When 'nan' Isn’t NaN
+#### Step 2: The Gender Column - When 'nan' Isn’t NaN
 
 Next came **'Gender'**. It had:
 - Upper and lower case entries,
@@ -121,7 +121,7 @@ So, I:
 - Replaced any string "nan" that snuck in with "unknown" too.
 
 
-### Step 3: Diagnosis - The Column That Needed a Translator
+#### Step 3: Diagnosis - The Column That Needed a Translator
 
 **'Diagnosis'** was a jumble of:
 - "H.B.P", "HBP", "Elevated Pressure", "High blood pressure", "high BP" - all of which meant the same thing.
@@ -134,7 +134,7 @@ So I:
 - Treated missing values accordingly.
 
 
-### Step 4: The Date Columns - Oh Boy 😅
+#### Step 4: The Date Columns - Oh Boy 😅
 
 Ah yes, **the three date columns**: 'Check_in_Date', 'First_Consultation', and 'Next_Visit'.
 
@@ -151,7 +151,7 @@ Here’s what I faced:
 
 And the kicker? You can't just fill missing dates with the median, not when each column has a different meaning. So:
 
-### Step 5: Chronological Sanity Checks
+#### Step 5: Chronological Sanity Checks
 
 Each date field meant something specific:
 - 'Check_in_Date': when the patient walked in.
@@ -167,7 +167,7 @@ So I set rules:
 With these filters, only the logically sound rows stayed.
 
 
-### Step 6: Outliers and Final Imputations
+#### Step 6: Outliers and Final Imputations
 
 At this point, the finish line was near - or so I thought.
 
